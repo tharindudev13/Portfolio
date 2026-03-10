@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
-  "homepage": "http://tharindudev13.github.io/Portfolio",
+  "homepage": "https://tharindudev13.github.io/Portfolio",
   "scripts": {
     "dev": "npx vite",
     "build": "npx vite build",
