@@ -8,7 +8,7 @@ const projects = [
   tech: ['React', 'JavaScript', 'Spring Boot'],
   github: 'https://github.com/tharindudev13/Libraria',
   live: '#',
-  image: 'https://github.com/tharindudev13/Libraria/blob/main/Libraria.png?raw=true'
+  image: 'https://raw.githubusercontent.com/tharindudev13/Libraria/main/Libraria.png?raw=true'
 },
 {
   title: 'Weather Dashboard',
@@ -17,7 +17,7 @@ const projects = [
   tech: ['React', 'JavaScript', 'Weatherapi API'],
   github: 'https://github.com/tharindudev13/Weather-app',
   live: 'https://tharindudev13.github.io/Weather-app/',
-  image:'https://github.com/tharindudev13/Weather-app/blob/main/image.png?raw=true'
+  image:'https://raw.githubusercontent.com/tharindudev13/Weather-app/main/image.png?raw=true'
 },
 // 
 ];
