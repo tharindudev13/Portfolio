@@ -3,15 +3,12 @@ import { motion } from 'framer-motion';
 import {
   GithubIcon,
   LinkedinIcon,
-  TwitterIcon,
   MailIcon,
-  SendIcon } from
+  SendIcon,
+  MessageCircle } from
 'lucide-react';
 export function ContactSection() {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Form is non-functional per requirements
-  };
+  
   return (
     <section id="contact" className="py-20 md:py-32">
       <div className="max-w-6xl mx-auto px-6">
@@ -68,28 +65,28 @@ export function ContactSection() {
 
             <div className="flex gap-6">
               <a
-                href="#"
+                href="https://github.com/tharindudev13"
                 className="text-slate-400 hover:text-amber-400 transition-colors"
                 aria-label="GitHub">
 
                 <GithubIcon className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/tharindudkodippili/"
                 className="text-slate-400 hover:text-amber-400 transition-colors"
                 aria-label="LinkedIn">
 
                 <LinkedinIcon className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="https://wa.me/94768597275"
                 className="text-slate-400 hover:text-amber-400 transition-colors"
-                aria-label="Twitter">
+                aria-label="WhatsApp">
 
-                <TwitterIcon className="w-6 h-6" />
+                <MessageCircle className="w-6 h-6" />
               </a>
               <a
-                href="#"
+                href="mailto:tharindukodippili13@gmail.com"
                 className="text-slate-400 hover:text-amber-400 transition-colors"
                 aria-label="Email">
 
@@ -116,7 +113,7 @@ export function ContactSection() {
             }}
             className="glass-panel p-8 rounded-xl">
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form className="space-y-6" action='https://formspree.io/f/xqeypwbv' method='POST'>
               <div>
                 <label
                   htmlFor="name"
@@ -126,6 +123,7 @@ export function ContactSection() {
                 </label>
                 <input
                   type="text"
+                  name='name'
                   id="name"
                   className="w-full bg-slate-950 border border-slate-800 rounded-md px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors"
                   placeholder="John Doe" />
@@ -140,6 +138,7 @@ export function ContactSection() {
                 </label>
                 <input
                   type="email"
+                  name='email'
                   id="email"
                   className="w-full bg-slate-950 border border-slate-800 rounded-md px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors"
                   placeholder="john@example.com" />
@@ -153,6 +152,7 @@ export function ContactSection() {
                   Message
                 </label>
                 <textarea
+                  name='message'
                   id="message"
                   rows={4}
                   className="w-full bg-slate-950 border border-slate-800 rounded-md px-4 py-3 text-slate-100 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-colors resize-none"

@@ -1,5 +1,4 @@
-import React from 'react';
-import { ArrowUpIcon } from 'lucide-react';
+import { ArrowUpIcon} from 'lucide-react';
 export function Footer() {
   return (
     <footer className="py-8 text-center border-t border-slate-800/50">
@@ -12,7 +11,7 @@ export function Footer() {
           <ArrowUpIcon className="w-5 h-5" />
         </a>
         <div className="font-mono text-sm text-slate-500">
-          <p className="mb-1">Designed & Built by Alex Chen</p>
+          <p className="mb-1">Designed & Built by Tharindu Kodippili&#169;</p>
           <p className="text-xs opacity-70">
             Built with React, TypeScript & Tailwind CSS
           </p>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 export function AboutSection() {
   return (
@@ -49,19 +48,13 @@ export function AboutSection() {
             className="md:col-span-3 space-y-6 text-slate-400 leading-relaxed">
 
             <p>
-              Hello! My name is Alex and I enjoy creating things that live on
-              the internet. My interest in web development started back in 2015
+              Hello! My name is Devinda and I enjoy creating things that live on
+              the internet. My interest in web development started back in 2020
               when I decided to try editing custom Tumblr themes — turns out
               hacking together HTML & CSS taught me a lot about layout and
               design!
             </p>
-            <p>
-              Fast-forward to today, and I've had the privilege of working at an
-              advertising agency, a start-up, a huge corporation, and a
-              student-led design studio. My main focus these days is building
-              accessible, inclusive products and digital experiences for a
-              variety of clients.
-            </p>
+        
             <p>
               I bridge the gap between design and engineering — combining my
               technical knowledge with a keen eye for aesthetics to create
@@ -69,8 +62,8 @@ export function AboutSection() {
               all the way to the browser.
             </p>
             <p>
-              When I'm not at the computer, I'm usually hanging out with my dog,
-              reading sci-fi novels, or exploring local coffee shops.
+              When I'm not at the computer, I'm usually hanging out with my friends,
+              watching sci-fi movies, or exploring local coffee shops.
             </p>
           </motion.div>
 

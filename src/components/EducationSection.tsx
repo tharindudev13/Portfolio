@@ -1,32 +1,31 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-const experiences = [
+const education = [
 {
-  role: 'Senior Fullstack Engineer',
-  company: 'TechNova Solutions',
-  period: '2021 - Present',
+  status: 'Bsc. Hons. in Artificial Intelligence',
+  institution: 'University Of Moratuwa',
+  period: '2026 - Present',
   description:
-  'Lead developer for a suite of enterprise SaaS products. Architected a microservices backend using Node.js and Docker, reducing system latency by 40%. Mentored junior developers and established CI/CD best practices.'
+  'Currently pursuing a Bsc. Hons. in Artificial Intelligence at the University of Moratuwa, where I am gaining a strong foundation in machine learning, data science, and AI ethics. I will be taking courses in algorithms, neural networks, and natural language processing.'
 },
 {
-  role: 'Frontend Developer',
-  company: 'Creative Digital Agency',
-  period: '2018 - 2021',
+  status: 'G.C.E. Advanced Level',
+  institution: 'Thelijjawilla Central College',
+  period: '2022 - 2024',
   description:
-  'Built highly interactive, award-winning marketing sites and web applications using React and Framer Motion. Collaborated closely with designers to ensure pixel-perfect implementation and smooth animations.'
+  'Stream: Physical Science, Grade: 3A s'
 },
 {
-  role: 'Web Developer',
-  company: 'StartUp Inc',
-  period: '2016 - 2018',
+  status: 'G.C.E. Ordinary Level',
+  institution: 'Thelijjawilla Central College',
+  period: '2016 - 2022',
   description:
-  'Developed and maintained the core product dashboard. Migrated legacy jQuery codebase to modern React, improving load times and developer velocity.'
+  'Grade: 9A s'
 }];
 
-export function ExperienceSection() {
+export function EducationSection() {
   return (
     <section
-      id="experience"
+      id="education"
       className="py-20 md:py-32 bg-slate-900/30 border-y border-slate-800/50">
 
       <div className="max-w-4xl mx-auto px-6">
@@ -49,13 +48,13 @@ export function ExperienceSection() {
           className="flex items-center gap-4 mb-16">
 
           <h2 className="text-3xl md:text-4xl font-bold">
-            04. <span className="text-slate-100">Where I've Worked</span>
+            04. <span className="text-slate-100">Where I've Studied</span>
           </h2>
           <div className="h-[1px] flex-1 max-w-xs bg-slate-800" />
         </motion.div>
 
         <div className="relative border-l border-slate-800 ml-3 md:ml-4 space-y-12">
-          {experiences.map((exp, idx) =>
+          {education.map((edu, idx) =>
           <motion.div
             key={idx}
             initial={{
@@ -81,16 +80,16 @@ export function ExperienceSection() {
 
               <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-2 gap-2">
                 <h3 className="text-xl font-bold text-slate-100">
-                  {exp.role}{' '}
-                  <span className="text-amber-400">@ {exp.company}</span>
+                  {edu.status}{' '} <br />
+                  <span className="text-amber-400">@ {edu.institution}</span>
                 </h3>
                 <span className="font-mono text-sm text-slate-500 whitespace-nowrap">
-                  {exp.period}
+                  {edu.period}
                 </span>
               </div>
 
               <p className="text-slate-400 leading-relaxed">
-                {exp.description}
+                {edu.description}
               </p>
             </motion.div>
           )}

@@ -1,31 +1,26 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { GithubIcon, ExternalLinkIcon } from 'lucide-react';
 const projects = [
 {
-  title: 'CloudSync Dashboard',
+  title: 'LIBRARIA: Library Management System (Ongoing)',
   description:
-  'A real-time analytics platform for monitoring cloud infrastructure. Features live resource tracking, cost estimation algorithms, and customizable alerting thresholds.',
-  tech: ['React', 'TypeScript', 'Node.js', 'WebSockets', 'AWS'],
-  github: '#',
-  live: '#'
+  'A full-stack library management system with a React frontend and Spring Boot backend. Features include book cataloging, user authentication, and Restful APIs for CRUD operations.This project done for learn and practice Spring Boot framework.',
+  tech: ['React', 'JavaScript', 'Spring Boot'],
+  github: 'https://github.com/tharindudev13/Libraria',
+  live: '#',
+  image: 'https://github.com/tharindudev13/Libraria/blob/main/Libraria.png?raw=true'
 },
 {
-  title: 'Nexus E-Commerce Engine',
+  title: 'Weather Dashboard',
   description:
-  'Headless e-commerce backend providing a robust API for inventory management, payment processing, and order fulfillment. Includes an admin dashboard for store owners.',
-  tech: ['Next.js', 'PostgreSQL', 'Stripe API', 'Prisma', 'Tailwind'],
-  github: '#',
-  live: '#'
+  'A weather application that displays current conditions and forecasts for any location. Features include location-based searches, detailed hourly predictions, and a clean, intuitive interface.This is a small step to practice API integration and frontend development with React.',
+  tech: ['React', 'JavaScript', 'Weatherapi API'],
+  github: 'https://github.com/tharindudev13/Weather-app',
+  live: 'https://tharindudev13.github.io/Weather-app/',
+  image:'https://github.com/tharindudev13/Weather-app/blob/main/image.png?raw=true'
 },
-{
-  title: 'DevFlow Task Manager',
-  description:
-  'A developer-focused project management tool with GitHub integration. Automatically syncs PRs with tasks and provides velocity metrics for agile teams.',
-  tech: ['Vue.js', 'Python', 'Django', 'Redis', 'GitHub API'],
-  github: '#',
-  live: '#'
-}];
+// 
+];
 
 export function ProjectsSection() {
   return (
@@ -77,12 +72,14 @@ export function ProjectsSection() {
             }}
             className="group relative flex flex-col justify-between bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:-translate-y-2 transition-transform duration-300">
 
+            
+
               {/* Image Placeholder Area */}
               <div className="h-48 bg-slate-850 relative overflow-hidden border-b border-slate-800">
                 <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-500/40 via-transparent to-transparent group-hover:opacity-40 transition-opacity duration-500" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="font-mono text-xs text-slate-600 opacity-50">
-                    {`// ${project.title.toLowerCase().replace(/\s+/g, '-')}.tsx`}
+                    <img src={project.image} alt={project.title} />
                   </div>
                 </div>
               </div>

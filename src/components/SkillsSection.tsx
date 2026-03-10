@@ -1,4 +1,3 @@
-import React, { Children } from 'react';
 import { motion } from 'framer-motion';
 import { CodeIcon, ServerIcon, WrenchIcon } from 'lucide-react';
 const skillCategories = [
@@ -10,28 +9,23 @@ const skillCategories = [
   'TypeScript',
   'Next.js',
   'Tailwind CSS',
-  'Framer Motion',
-  'Redux',
-  'Vue.js']
+  'Redux']
 
 },
 {
   title: 'Backend',
   icon: <ServerIcon className="w-5 h-5 text-amber-400" />,
   skills: [
-  'Node.js',
   'Python',
-  'PostgreSQL',
-  'Redis',
-  'Docker',
-  'GraphQL',
-  'Express']
+  'Java',
+  'SQL',
+  'Spring Boot',]
 
 },
 {
   title: 'Tools & Others',
   icon: <WrenchIcon className="w-5 h-5 text-amber-400" />,
-  skills: ['Git', 'AWS', 'Figma', 'CI/CD', 'Linux', 'Jest', 'Webpack']
+  skills: ['Git', 'Figma']
 }];
 
 const containerVariants = {

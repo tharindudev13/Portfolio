@@ -1,4 +1,3 @@
-import React, { Children } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpIcon } from 'lucide-react';
 const containerVariants = {
@@ -58,7 +57,7 @@ export function HeroSection() {
             variants={itemVariants}
             className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
 
-            I'm <span className="text-white">Alex Chen</span>.<br />
+            I'm <span className="text-white">Tharindu Devinda</span>.<br />
             <span className="text-slate-500">Fullstack Developer.</span>
           </motion.h1>
 
@@ -116,7 +115,7 @@ export function HeroSection() {
               <div className="w-3 h-3 rounded-full bg-amber-500" />
               <div className="w-3 h-3 rounded-full bg-emerald-500" />
               <div className="ml-4 text-xs font-mono text-slate-500">
-                ~/alex/portfolio
+                ~/dev/portfolio
               </div>
             </div>
             {/* Terminal Body */}
@@ -127,7 +126,7 @@ export function HeroSection() {
                 <span className="text-slate-300">npm start</span>
               </div>
               <div className="text-slate-400 mt-2">
-                &gt; alex-portfolio@1.0.0 start
+                &gt; dev-portfolio@1.0.0 start
                 <br />
                 &gt; node server.js
               </div>
@@ -138,7 +137,7 @@ export function HeroSection() {
                 [info] Compiling frontend assets...
               </div>
               <div className="text-emerald-400 mt-2">
-                [success] Build completed in 1.2s
+                [success] Build completed in 1.3s
               </div>
               <div className="flex text-emerald-400 mt-4">
                 <span className="mr-2">➜</span>

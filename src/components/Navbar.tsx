@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { MenuIcon, XIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 const navLinks = [
@@ -15,13 +15,19 @@ const navLinks = [
   href: '#projects'
 },
 {
-  name: 'Experience',
-  href: '#experience'
+  name: 'Education',
+  href: '#education'
 },
 {
   name: 'Contact',
   href: '#contact'
 }];
+
+
+const fileUrl = 'https://drive.google.com/file/d/1Tr_LFFMrFmie2vvmSUyYnmf7rPV223W0/view?usp=drive_link';
+    
+
+
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +49,7 @@ export function Navbar() {
           className="text-xl font-mono font-bold text-slate-100 hover:text-amber-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded">
 
           <span className="text-amber-500">&lt;</span>
-          AlexChen
+           &nbsp;Dev 
           <span className="text-amber-500">/&gt;</span>
         </a>
 
@@ -59,10 +65,10 @@ export function Navbar() {
             </a>
           )}
           <a
-            href="#contact"
+            href={fileUrl} download="CV_Tharindu.pdf"
             className="px-4 py-2 text-sm font-mono font-medium text-slate-950 bg-amber-400 hover:bg-amber-300 rounded transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950">
 
-            Hire Me
+            Resume
           </a>
         </nav>
 
