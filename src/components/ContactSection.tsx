@@ -31,7 +31,7 @@ export function ContactSection() {
           className="flex items-center gap-4 mb-16">
 
           <h2 className="text-3xl md:text-4xl font-bold">
-            05. <span className="text-slate-100">What's Next?</span>
+            06. <span className="text-slate-100">What's Next?</span>
           </h2>
           <div className="h-[1px] flex-1 max-w-xs bg-slate-800" />
         </motion.div>
