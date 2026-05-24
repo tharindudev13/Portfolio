@@ -91,12 +91,12 @@ export function AboutSection() {
               <div className="absolute inset-0 bg-amber-500/10 mix-blend-overlay group-hover:bg-transparent transition-colors duration-300 z-10" />
               <div className="w-full h-full flex items-center justify-center bg-slate-800">
                 <span className="font-mono text-slate-600 border border-slate-700 px-4 py-2 rounded">
-                  Image Placeholder
+                  <img src="https://github.com/tharindudev13/Portfolio/blob/main/src/me.jpg?raw=true" alt="Profile Picture"  />
                 </span>
               </div>
             </div>
             {/* Decorative border behind image */}
-            <div className="absolute inset-0 border-2 border-amber-500 rounded-lg translate-x-4 translate-y-4 -z-10 transition-all duration-300 group-hover:translate-x-6 group-hover:translate-y-6" />
+            <div className="absolute inset-0 border-2 border-amber-500 rounded-lg translate-x-4 translate-y-4 -z-10 transition-all duration-300 group-hover:translate-x-6 group-hover:translate-y-6 blur-sm" />
           </motion.div>
         </div>
       </div>
