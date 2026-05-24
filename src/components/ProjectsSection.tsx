@@ -2,10 +2,19 @@ import { motion } from 'framer-motion';
 import { GithubIcon, ExternalLinkIcon } from 'lucide-react';
 const projects = [
 {
+  title: 'Edusource',
+  description:
+  'A comprehensive, multilingual web platform for Sri Lankan Advanced Level (A/L) students across all subject streams to find and rate classes, access and upload study notes and past papers, and take interactive practice quizzes. Built using a modern, scalable full-stack architecture.',
+  tech: ['React', 'JavaScript', 'Spring Boot','Mongodb','Tailwind CSS'],
+  github: 'https://github.com/tharindudev13/edusoure',
+  live: 'https://www.edusource.lk',
+  image:'https://www.edusource.lk/image.png'
+},
+{
   title: 'LIBRARIA: Library Management System (Ongoing)',
   description:
   'A full-stack library management system with a React frontend and Spring Boot backend. Features include book cataloging, user authentication, and Restful APIs for CRUD operations.This project done for learn and practice Spring Boot framework.',
-  tech: ['React', 'JavaScript', 'Spring Boot'],
+  tech: ['React', 'JavaScript', 'Spring Boot','MySQL','Tailwind CSS'],
   github: 'https://github.com/tharindudev13/Libraria',
   live: '#',
   image: 'https://raw.githubusercontent.com/tharindudev13/Libraria/main/Libraria.png?raw=true'
@@ -18,8 +27,7 @@ const projects = [
   github: 'https://github.com/tharindudev13/Weather-app',
   live: 'https://tharindudev13.github.io/Weather-app/',
   image:'https://raw.githubusercontent.com/tharindudev13/Weather-app/main/image.png?raw=true'
-},
-// 
+}, 
 ];
 
 export function ProjectsSection() {
